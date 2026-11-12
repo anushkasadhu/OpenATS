@@ -50,8 +50,8 @@ importers:
         specifier: ^3.1161.0
         version: 3.1163.0
       '@google/genai':
-        specifier: ^2.32.0
-        version: 2.32.0(@modelcontextprotocol/sdk@1.32.1(supports-color@5.5.0)(zod@4.6.7))(supports-color@5.5.0)
+        specifier: ^3.0.0
+        version: 3.0.0(@modelcontextprotocol/sdk@1.32.1(supports-color@5.5.0)(zod@4.6.7))(supports-color@5.5.0)
       bullmq:
         specifier: ^6.6.0
         version: 6.7.1(ioredis@6.0.0(supports-color@5.5.0))(pg@8.23.1)
@@ -2291,9 +2291,9 @@ packages:
   '@floating-ui/utils@0.2.12':
     resolution: {integrity: sha512-HpCo8tmWzLVad5s2d19EhAz5zqrrQ6s69qd6moPMQvkOuSwDT1YgRfWSVuc4ennqrgv3OHppiOGMQ7oC13yIww==}
 
-  '@google/genai@2.32.0':
-    resolution: {integrity: sha512-60c79uXpR0a47bmGqDxbXEBuQUalNmwo5mx5kqb91jIW4FoqpsLSt86DeVhRhtH5+s/16Wqxt3sXzFQn2U1OHQ==}
-    engines: {node: '>=20.0.0'}
+  '@google/genai@3.0.0':
+    resolution: {integrity: sha512-0o2uBXPWBNUu0jWg2Id5iBtCnsd7lnxKPQfnijKvNublG/zj40CToERvz/eyfNjzzXt2kwuvxpouLUrRCZ2WUQ==}
+    engines: {node: '>=22.0.0'}
     peerDependencies:
       '@modelcontextprotocol/sdk': ^1.25.2
     peerDependenciesMeta:
@@ -8417,6 +8417,7 @@ packages:
 
   node-abort-controller@3.1.1:
     resolution: {integrity: sha512-AGK2yQKIjRuqnc6VkX2Xj5d+QW8xZ87pa1UK6yA6ouUyuxfHuMP6umE5QK7UmTeOAymo+Zx1Fxiuw9rVx8taHQ==}
+    deprecated: This package is no longer needed on supported Node.js versions. Node.js 16+ includes AbortController and AbortSignal as built-in globals. All Node.js versions requiring this polyfill are end-of-life. Use the built-in globals instead.
 
   node-domexception@1.0.0:
     resolution: {integrity: sha512-/jKZoMpw0F8GRwl4/eLROPA3cfcXtLApP0QzLmUT/HuPCZWyB7IY9ZrMeKw2O/nFIqPQB3PVM9aYm0F312AXDQ==}
@@ -14387,7 +14388,7 @@ snapshots:
 
   '@floating-ui/utils@0.2.12': {}
 
-  '@google/genai@2.32.0(@modelcontextprotocol/sdk@1.32.1(supports-color@5.5.0)(zod@4.6.7))(supports-color@5.5.0)':
+  '@google/genai@3.0.0(@modelcontextprotocol/sdk@1.32.1(supports-color@5.5.0)(zod@4.6.7))(supports-color@5.5.0)':
     dependencies:
       google-auth-library: 10.9.1(supports-color@5.5.0)
       p-retry: 4.6.2
@@ -22156,7 +22157,7 @@ snapshots:
       '@protobufjs/path': 1.1.2
       '@protobufjs/pool': 1.1.0
       '@protobufjs/utf8': 1.1.2
-      '@types/node': 26.6.5
+      '@types/node': 26.6.6
       long: 5.3.2
 
   proxy-addr@2.0.8:
